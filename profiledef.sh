@@ -3,7 +3,7 @@
 
 iso_name="panamint"
 iso_label="PANAMINT_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Dmytro Tsyba <dima@pissmail.com>"
+iso_publisher="Venus <venusisonvenus@gmail.com>"
 iso_application="AmeOS Panamint Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
