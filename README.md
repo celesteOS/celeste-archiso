@@ -1,2 +1,1 @@
-# archiso
 # panamint-archiso
