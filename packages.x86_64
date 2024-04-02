@@ -79,11 +79,7 @@ nmap
 ntfs-3g
 nvme-cli
 open-iscsi
-open-vm-tools
-openconnect
-openpgp-card-tools
 openssh
-openvpn
 partclone
 parted
 partimage
@@ -159,4 +155,9 @@ gvfs
 mutter
 nautilus
 noto-fonts
+ttf-linux-libertine
 plymouth
+bluez
+bluez-utils
+neofetch
+networkmanager
