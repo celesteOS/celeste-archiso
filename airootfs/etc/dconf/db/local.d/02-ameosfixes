@@ -1,0 +1,7 @@
+[org/gnome/desktop/interface]
+document-font-name='DM Sans 11'
+font-name='DM Sans 11'
+monospace-font-name='DM Mono 10'
+
+[org/gnome/shell/extensions/user-theme]
+name='adw-gtk3'
