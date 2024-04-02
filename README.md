@@ -1,2 +1,2 @@
-# panamint-archiso (gnome)
+# panamint-archiso
 
