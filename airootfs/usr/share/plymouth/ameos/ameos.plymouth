@@ -1,0 +1,98 @@
+[Plymouth Theme]
+Name[be]=AmeOS
+Name[cs]=AmeOS
+Name[da]=AmeOS
+Name[de]=AmeOS
+Name[eo]=AmeOS
+Name[es]=AmeOS
+Name[eu]=AmeOS
+Name[fr]=AmeOS
+Name[fur]=AmeOS
+Name[hi]=AmeOS (सिस्टम का लोगो)
+Name[hr]=AmeOS
+Name[hu]=AmeOS
+Name[id]=AmeOS
+Name[it]=AmeOS
+Name[lt]=AmeOS
+Name[ka]=AmeOS
+Name[nl]=AmeOS
+Name[pa]=AmeOS
+Name[pl]=AmeOS
+Name[pt_BR]=AmeOS
+Name[ro]=AmeOS
+Name[ru]=AmeOS
+Name[sr]=AmeOS
+Name[sv]=AmeOS
+Name[uk]=AmeOS
+Name[zh_CN]=AmeOS
+Name[ms]=AmeOS
+Name[he]=AmeOS
+Name[fa]=AmeOS
+Name[fi]=AmeOS
+Name[ie]=AmeOS
+Name[gl]=AmeOS
+Name[cy]=AmeOS
+Name=AmeOS
+Description=Generic spinny wheel thing
+ModuleName=two-step
+
+[two-step]
+Font=DM Sans 12
+TitleFont=DM Sans Bold 30
+ImageDir=/usr/share/plymouth/themes//spinner
+DialogHorizontalAlignment=.5
+DialogVerticalAlignment=.382
+TitleHorizontalAlignment=.5
+TitleVerticalAlignment=.382
+HorizontalAlignment=.5
+VerticalAlignment=.7
+WatermarkHorizontalAlignment=.5
+WatermarkVerticalAlignment=.96
+Transition=none
+TransitionDuration=0.0
+BackgroundStartColor=0x000000
+BackgroundEndColor=0x000000
+ProgressBarBackgroundColor=0x606060
+ProgressBarForegroundColor=0xffffff
+DialogClearsFirmwareBackground=true
+MessageBelowAnimation=true
+
+[boot-up]
+UseEndAnimation=false
+UseFirmwareBackground=true
+
+[shutdown]
+UseEndAnimation=false
+UseFirmwareBackground=true
+
+[reboot]
+UseEndAnimation=false
+UseFirmwareBackground=true
+
+[updates]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Updating AmeOS
+SubTitle=Please don't turn off your PC
+
+[system-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Upgrading AmeOS
+SubTitle=Please don't turn off your PC
+
+[firmware-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Upgrading firmware
+SubTitle=Do not turn off your computer
+
+[system-reset]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Resetting
+SubTitle=Do not turn off your computer
