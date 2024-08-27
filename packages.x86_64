@@ -32,7 +32,6 @@ f2fs-tools
 fatresize
 foot-terminfo
 fsarchiver
-ameos/filesystem
 gnu-netcat
 gpart
 gpm
@@ -137,7 +136,7 @@ xorg-xkill
 xorg-xrdb
 loupe
 evince
-gnome-text-editor
+gedit
 snapshot
 gnome-desktop
 gnome-clocks
@@ -156,9 +155,8 @@ mutter
 nautilus
 noto-fonts
 ttf-linux-libertine
-ameos/plymouth
+plymouth
 bluez
 bluez-utils
-ameos/neofetch
+neofetch
 networkmanager
-firefox

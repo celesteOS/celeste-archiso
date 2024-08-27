@@ -2,12 +2,6 @@
 document-font-name='DM Sans 11'
 font-name='DM Sans 11'
 monospace-font-name='DM Mono 10'
-gtk-theme='adw-gtk3'
-enable-hot-corners='FALSE'
-icon-theme='AmeOS'
 
 [org/gnome/shell/extensions/user-theme]
 name='adw-gtk3'
-
-[org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST', 'Pardus']	
