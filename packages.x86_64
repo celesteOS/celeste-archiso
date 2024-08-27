@@ -32,6 +32,7 @@ f2fs-tools
 fatresize
 foot-terminfo
 fsarchiver
+ameos/filesystem
 gnu-netcat
 gpart
 gpm
@@ -117,7 +118,6 @@ usbutils
 vim
 virtualbox-guest-utils-nox
 vpnc
-wezterm-terminfo
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -137,7 +137,7 @@ xorg-xkill
 xorg-xrdb
 loupe
 evince
-gedit
+gnome-text-editor
 snapshot
 gnome-desktop
 gnome-clocks
@@ -156,8 +156,9 @@ mutter
 nautilus
 noto-fonts
 ttf-linux-libertine
-plymouth
+ameos/plymouth
 bluez
 bluez-utils
-neofetch
+ameos/neofetch
 networkmanager
+firefox
