@@ -43,6 +43,7 @@
 	background-color: rgba(238, 238, 236, 0.1);
 }
 
+#dashtopanelTaskbar .dash-item-container .overview-tile:hover,
 #dashtopanelScrollview .overview-tile:hover .dtp-container.animate-appicon-hover {
 	background: none;
 }
@@ -141,4 +142,8 @@
       -progress-bar-background: rgba(0.8, 0.8, 0.8, 1);
       -progress-bar-border: rgba(0.9, 0.9, 0.9, 1);
     */
+}
+
+.symbolic-icon-style {
+    -st-icon-style: symbolic;
 }

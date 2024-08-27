@@ -45,7 +45,7 @@ import * as Utils from './utils.js';
 import * as PanelSettings from './panelSettings.js';
 import * as Taskbar from './taskbar.js';
 import * as Progress from './progress.js';
-import {DTP_EXTENSION, SETTINGS, DESKTOPSETTINGS, EXTENSION_PATH} from './extension.js';
+import {DTP_EXTENSION, SETTINGS, DESKTOPSETTINGS, TERMINALSETTINGS, EXTENSION_PATH} from './extension.js';
 import {gettext as _, ngettext} from 'resource:///org/gnome/shell/extensions/extension.js';
 
 //timeout names
@@ -62,6 +62,11 @@ const DOUBLE_CLICK_DELAY_MS = 450;
 let LABEL_GAP = 5;
 let MAX_INDICATORS = 4;
 export const DEFAULT_PADDING_SIZE = 4;
+
+let APPICON_STYLE = {
+    NORMAL: "NORMAL",
+    SYMBOLIC: "SYMBOLIC"
+}
 
 let DOT_STYLE = {
     DOTS: "DOTS",
@@ -188,6 +193,7 @@ export const TaskbarAppIcon = GObject.registerClass({
 
         this._onAnimateAppiconHoverChanged();
         this._setAppIconPadding();
+        this._setAppIconStyle();
         this._showDots();
 
         this._focusWindowChangedId = global.display.connect('notify::focus-window', 
@@ -626,6 +632,15 @@ export const TaskbarAppIcon = GObject.registerClass({
         this._iconContainer.set_style('padding: ' + padding + 'px;');
     }
 
+    _setAppIconStyle() {
+        let symbolic_icon_style_name = 'symbolic-icon-style';
+        if (SETTINGS.get_string('appicon-style') === APPICON_STYLE.SYMBOLIC) {
+            this.add_style_class_name(symbolic_icon_style_name);
+        } else {
+            this.remove_style_class_name(symbolic_icon_style_name);
+        }
+    }
+
     popupMenu() {
         this._removeMenuTimeout();
         this.fake_release();
@@ -828,7 +843,10 @@ export const TaskbarAppIcon = GObject.registerClass({
             else
                 buttonAction = SETTINGS.get_string('middle-click-action');
         }
-        else if (button && button == 1) {
+        // fixed issue #1676 by checking for button 0 or 1 to also handle touchscreen
+        // input, probably not the proper fix as i'm not aware button 0 should exist
+        // but from using this fix for months it seems to not create any issues
+        else if (button === 0 || button === 1) {
             let now = global.get_current_time()
 
             doubleClick = now - this.lastClick < DOUBLE_CLICK_DELAY_MS
@@ -1785,7 +1803,7 @@ export const MyShowAppsIconMenu = class extends PopupMenu.PopupMenu {
 
         this._appendItem({
             title: _('Terminal'),
-            cmd: ['gnome-terminal']
+            cmd: [TERMINALSETTINGS.get_string('exec')]
         });
 
         this._appendItem({
