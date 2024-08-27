@@ -3,8 +3,8 @@
 <wallpapers>
   <wallpaper deleted="false">
     <name>Fold</name>
-    <filename>/usr/share/backgrounds/gnome/fold-l.jpg</filename>
-    <filename-dark>/usr/share/backgrounds/gnome/fold-d.jpg</filename-dark>
+    <filename>/usr/share/backgrounds/gnome/fold-l.jxl</filename>
+    <filename-dark>/usr/share/backgrounds/gnome/fold-d.jxl</filename-dark>
     <options>zoom</options>
     <shade_type>solid</shade_type>
     <pcolor>#26a269</pcolor>
