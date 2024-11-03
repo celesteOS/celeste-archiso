@@ -1,0 +1,43 @@
+name: Build an ISO
+
+on:
+    push:
+        branches: [ "upstream" ]
+    workflow_dispatch:
+
+env:
+    KEY: nnmIcuvKog2dWgtpTQ1ydCefTqWir7kGzQhoJgY3bGKJIArd3ANMPswG9NDxtnoJ
+    HOST: files.odysen.space
+    CIUUID: 116af9f9-8322-4aa3-b2ed-bc7ada4c1991
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        container:
+            image: archlinux:latest
+            options: --privileged
+        steps:
+            - uses: actions/checkout@v2
+            - name: Prepare keyring
+              run: |
+                  pacman-key --init
+                  pacman --noconfirm -Sy archlinux-keyring
+            
+            - name: Install tools
+              run: |
+                  rm /etc/pacman.conf
+                  cp pacman.conf /etc/pacman.conf
+                  pacman --noconfirm -Syyu
+                  pacman --noconfirm -S archiso git jq
+            
+            - name: Build ISO
+              run: |
+                  mkarchiso -v .
+
+            - name: Upload ISO
+              run: |
+                  echo "Uploading to Odysen CI CDN..."
+                  ls out
+                  sleep 4
+                  curl -X POST -F "file[]=@$(find out | grep .iso)" -H "x-api-key: ${{ env.KEY }}" -H "albumuuid: ${{ env.CIUUID }}" https://${{ env.HOST }}/api/upload
+                  
