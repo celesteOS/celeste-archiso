@@ -28,7 +28,7 @@ jobs:
                   rm /etc/pacman.conf
                   cp pacman.conf /etc/pacman.conf
                   pacman --noconfirm -Syyu
-                  pacman --noconfirm -S archiso git jq
+                  pacman --noconfirm -S archiso git jq grub
             
             - name: Build ISO
               run: |
