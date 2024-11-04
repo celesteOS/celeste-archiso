@@ -155,8 +155,8 @@ mutter
 nautilus
 noto-fonts
 ttf-linux-libertine
-ameos/plymouth
+plymouth
 bluez
 bluez-utils
-ameos/neofetch
+neofetch
 networkmanager
