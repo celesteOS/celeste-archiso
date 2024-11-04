@@ -32,7 +32,6 @@ f2fs-tools
 fatresize
 foot-terminfo
 fsarchiver
-gnu-netcat
 gpart
 gpm
 gptfdisk
@@ -127,7 +126,6 @@ zsh
 xorg
 gdm
 bash-completion
-bash-completion
 os-prober
 dex
 libxinerama
@@ -155,8 +153,10 @@ mutter
 nautilus
 noto-fonts
 ttf-linux-libertine
-plymouth
 bluez
 bluez-utils
-neofetch
 networkmanager
+
+# AMEOS 
+ameos/plymouth
+ameos/neofetch
