@@ -1,0 +1,25 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_175_26)">
+<circle cx="128" cy="128" r="120" fill="url(#paint0_linear_175_26)"/>
+<circle cx="128" cy="128" r="120" fill="white" fill-opacity="0.4"/>
+<circle cx="128" cy="128" r="120" stroke="#3C2C30" stroke-width="16"/>
+<mask id="mask0_175_26" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="25" y="62" width="205" height="131">
+<rect x="25.9126" y="62.1375" width="203.175" height="130.725" fill="#FF8686"/>
+</mask>
+<g mask="url(#mask0_175_26)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M130.828 131.065C132.398 130.785 133.444 129.285 133.164 127.715C132.885 126.145 131.385 125.099 129.815 125.379L56.9058 138.373C55.3358 138.653 54.2899 140.152 54.5697 141.722C54.8495 143.292 56.349 144.338 57.919 144.058L130.828 131.065Z" fill="#FF6593"/>
+<path d="M189.256 69.3938C190.872 67.6296 190.751 64.8898 188.987 63.2744C187.223 61.6589 184.483 61.7795 182.867 63.5437L125.137 126.589V187.744C125.137 190.136 127.077 192.075 129.469 192.075C131.861 192.075 133.8 190.136 133.8 187.744V129.956L189.256 69.3938Z" fill="#53525F"/>
+<circle cx="129.469" cy="128.55" r="7.21875" fill="white" stroke="#53525F" stroke-width="5.775"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_175_26" x1="0.810121" y1="6.39634e-06" x2="274.965" y2="234.951" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EDF4FB"/>
+<stop offset="0.9999" stop-color="#D0D5E1"/>
+<stop offset="1" stop-color="#E1CFD5"/>
+</linearGradient>
+<clipPath id="clip0_175_26">
+<rect width="256" height="256" fill="white"/>
+</clipPath>
+</defs>
+</svg>
