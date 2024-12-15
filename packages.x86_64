@@ -126,7 +126,6 @@ zsh
 xorg
 gdm
 bash-completion
-bash-completion
 os-prober
 dex
 libxinerama
@@ -154,8 +153,10 @@ mutter
 nautilus
 noto-fonts
 ttf-linux-libertine
-ameos/plymouth
 bluez
 bluez-utils
-ameos/neofetch
 networkmanager
+
+# AMEOS 
+ameos/plymouth
+ameos/neofetch
