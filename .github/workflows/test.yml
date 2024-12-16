@@ -3,9 +3,8 @@ on: pull_request
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Dump host variable
-      env:
-        HOST: ${{ secrets.CDN_HOST }}
-      run: echo "$HOST"
+        env:
+          HOST: ${{ secrets.CDN_HOST }}
+        run: echo "$HOST"
