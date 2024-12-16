@@ -2,7 +2,9 @@ name: Build an ISO
 
 on:
     push:
-        branches: [ "upstream" ]
+        branches:
+           - "master"
+           - "upstream"
     workflow_dispatch:
 
 env:
