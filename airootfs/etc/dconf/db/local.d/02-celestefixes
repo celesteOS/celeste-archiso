@@ -1,0 +1,9 @@
+[org/gnome/desktop/interface]
+document-font-name='Celeste Sans 11'
+font-name='Celeste Sans 11'
+monospace-font-name='Celeste Mono 10'
+gtk-theme='adw-gtk3'
+icon-theme='Celestic'
+
+[org/gnome/shell/extensions/user-theme]
+name='adw-gtk3'
