@@ -157,6 +157,3 @@ bluez
 bluez-utils
 networkmanager
 
-# AMEOS 
-ameos/plymouth
-ameos/neofetch
