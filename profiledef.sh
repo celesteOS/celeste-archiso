@@ -9,10 +9,10 @@ else
    IMGNAME="_homemade"
 fi
 
-iso_name="panamint"
-iso_label="PANAMINT_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_name="celesteOS"
+iso_label="CELESTE_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="Venus <venusisonvenus@gmail.com>"
-iso_application="AmeOS Panamint Live/Rescue DVD"
+iso_application="celesteOS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)$IMGNAME"
 install_dir="arch"
 buildmodes=('iso')
