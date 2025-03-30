@@ -73,14 +73,14 @@ UseFirmwareBackground=true
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-Title=Updating celeste
+Title=Updating celesteOS
 SubTitle=Please don't turn off your PC
 
 [system-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-Title=Upgrading celeste
+Title=Upgrading celesteOS
 SubTitle=Please don't turn off your PC
 
 [firmware-upgrade]
