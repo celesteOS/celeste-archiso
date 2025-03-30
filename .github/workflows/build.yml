@@ -1,14 +1,13 @@
 name: Build an ISO
  
- on:
-     workflow_dispatch:
+on: workflow_dispatch
  
- env:
+env:
      KEY: ${{ secrets.CDN_KEY }}
      HOST: ${{ secrets.CDN_HOST }}
      CIUUID: ${{ secrets.CDN_CIUUID }}
  
- jobs:
+jobs:
      build:
          runs-on: ubuntu-latest
          container:
