@@ -33,7 +33,7 @@ jobs:
  
              - name: Upload ISO
                run: |
-                   echo "Uploading to Odysen CI CDN..."
+                   echo "Uploading to Celeste CDN..."
                    ls out
                    sleep 4
                    curl -H "authorization: ${{ env.KEY }}" -H "content-type: multipart/form-data" -H "x-zipline-folder: ${{ env.CIUUID }}" https://${{ env.HOST }}/api/upload -F "file=@$(find out | grep .iso)"
