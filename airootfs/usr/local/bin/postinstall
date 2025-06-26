@@ -1,0 +1,38 @@
+#!/bin/bash
+sed -i 's/AutomaticLoginEnable=True/AutomaticLoginEnable=False/' /etc/gdm/custom.comf
+sed -i '/AutomaticLogin=liveuser/d' /etc/gdm/custom.conf
+rm -rf /etc/mkinitcpio.d/*
+rm -rf /etc/mkinitcpio.conf.d/*
+rm -rf /root/*
+sed -i '/liveuser/d' /etc/passwd
+sed -i '/liveuser/d' /etc/sudoers
+rm -rf /etc/ssh/*
+rm -rf /etc/systemd/system/reflector.service.d
+rm -rf /etc/systemd/system/livecd*
+rm -rf /usr/local/bin/*
+rm -rf /etc/systemd/logind.conf.d
+rm -rf /etc/systemd/resolved.conf.d
+rm -rf /etc/systemd/system-generators
+rm -rf /etc/systemd/network/*
+rm -rf /etc/systemd/journald.conf.d
+rm -rf /etc/systemd/network.conf.d
+rm -rf /etc/systemd/system/getty@tty1.service.d
+rm -rf /etc/systemd/system/*pacman*
+rm -rf /etc/systemd/system/sysinit.target.wants
+rm -rf /etc/systemd/system/systemd-networkd-wait-online.service.d
+rm -rf /etc/systemd/system/cloud-init.target.wants
+rm -rf /etc/systemd/system/choose-mirror.service
+rm -rf /etc/systemd/system/dbus-org.freedesktop.ModemManager1.service
+rm -rf /etc/systemd/system/sound.target.wants
+rm -rf /etc/systemd/system/multi-user.target.wants/choose-mirror.service
+rm -rf /etc/systemd/system/multi-user.target.wants/hv_*
+rm -rf /etc/systemd/system/multi-user.target.wants/ModemManager.service
+rm -rf /etc/systemd/system/multi-user.target.wants/pacman-init.service
+rm -rf /etc/systemd/system/multi-user.target.wants/reflector.service
+rm -rf /etc/systemd/system/multi-user.target.wants/livecd-talk.service
+rm -rf /etc/systemd/system/multi-user.target.wants/reflector.service
+rm -rf /etc/systemd/system/multi-user.target.wants/systemd-networkd.service
+rm -rf /etc/systemd/system/multi-user.target.wants/vbox*
+rm -rf /etc/systemd/system/multi-user.target.wants/vm*
+rm -rf /etc/systemd/system/multi-user.target.wants/systemd-resolved.service
+rm -rf /etc/resolv.conf
