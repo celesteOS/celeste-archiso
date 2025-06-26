@@ -155,5 +155,7 @@ ttf-linux-libertine
 bluez
 bluez-utils
 networkmanager
-calamares
+calamares-config
 calamares-celeste
+kpmcore
+yaml-cpp
