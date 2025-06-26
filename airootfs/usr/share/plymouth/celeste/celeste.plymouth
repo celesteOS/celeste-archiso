@@ -1,49 +1,16 @@
 [Plymouth Theme]
-Name[be]=celeste
-Name[cs]=celeste
-Name[da]=celeste
-Name[de]=celeste
-Name[eo]=celeste
-Name[es]=celeste
-Name[eu]=celeste
-Name[fr]=celeste
-Name[fur]=celeste
-Name[hi]=celeste (सिस्टम का लोगो)
-Name[hr]=celeste
-Name[hu]=celeste
-Name[id]=celeste
-Name[it]=celeste
-Name[lt]=celeste
-Name[ka]=celeste
-Name[nl]=celeste
-Name[pa]=celeste
-Name[pl]=celeste
-Name[pt_BR]=celeste
-Name[ro]=celeste
-Name[ru]=celeste
-Name[sr]=celeste
-Name[sv]=celeste
-Name[uk]=celeste
-Name[zh_CN]=celeste
-Name[ms]=celeste
-Name[he]=celeste
-Name[fa]=celeste
-Name[fi]=celeste
-Name[ie]=celeste
-Name[gl]=celeste
-Name[cy]=celeste
 Name=celeste
 Description=celesteOS boot animation
 ModuleName=two-step
 
 [two-step]
-Font=DM Sans 12
-TitleFont=DM Sans Bold 30
-ImageDir=/usr/share/plymouth/themes//spinner
+Font=Celeste Sans 12
+TitleFont=Celeste Sans Bold 30
+ImageDir=/usr/share/plymouth/themes//celeste
 DialogHorizontalAlignment=.5
-DialogVerticalAlignment=.382
+DialogVerticalAlignment=.5
 TitleHorizontalAlignment=.5
-TitleVerticalAlignment=.382
+TitleVerticalAlignment=.5
 HorizontalAlignment=.5
 VerticalAlignment=.7
 WatermarkHorizontalAlignment=.5
@@ -62,37 +29,44 @@ UseEndAnimation=false
 UseFirmwareBackground=true
 
 [shutdown]
-UseEndAnimation=false
-UseFirmwareBackground=true
+UseEndAnimation=true
+UseFirmwareBackground=false
+Title=Shutting down
+VerticalAlignment=.200
+TitleVerticalAlignment=.20
 
 [reboot]
-UseEndAnimation=false
-UseFirmwareBackground=true
+UseEndAnimation=true
+UseFirmwareBackground=false
+Title=Restarting
+SubTitle=Do not turn off your computer
+VerticalAlignment=.200
+TitleVerticalAlignment=.20
 
 [updates]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-Title=Updating celesteOS
-SubTitle=Please don't turn off your PC
+Title=Installing Updates
+SubTitle=Do not turn off your computer
 
 [system-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-Title=Upgrading celesteOS
-SubTitle=Please don't turn off your PC
+Title=Upgrading System...
+SubTitle=Do not turn off your computer
 
 [firmware-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-Title=Upgrading firmware
+Title=Upgrading Firmware...
 SubTitle=Do not turn off your computer
 
 [system-reset]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-Title=Resetting
+Title=Resetting System...
 SubTitle=Do not turn off your computer
