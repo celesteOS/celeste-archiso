@@ -11,7 +11,7 @@ fi
 
 iso_name="celesteOS"
 iso_label="CELESTE_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Venus <venusisonvenus@gmail.com>"
+iso_publisher="Juniper Solis <venusisonvenus@gmail.com>"
 iso_application="celesteOS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)$IMGNAME"
 install_dir="arch"

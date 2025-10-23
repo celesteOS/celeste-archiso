@@ -155,7 +155,11 @@ ttf-linux-libertine
 bluez
 bluez-utils
 networkmanager
-calamares-config
-calamares-celeste
+os-installer-celeste
 kpmcore
 yaml-cpp
+gnome-shell-extension-dash-to-panel
+celeste-config
+celeste-fonts
+celeste-theme
+plymouth
